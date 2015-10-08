@@ -1,81 +1,109 @@
 body {
     font-family: sans-serif;
-    background-color: #196464;
-    color: white;
-    font-size: 1em;
+    /*background-color: #196464;*/
+    background-color: white;
+    color: black;
+    /*font-size: 1em;*/
 }
+
+
+header {
+    /*background-color: #196464;*/
+    /*max-width:400px;*/
+    /*float:left;*/
+    margin-top: 5vh;
+    font-size: 1.3em;
+    /*border:3px solid yellow;*/
+    /*text-align: center;*/
+}
+
 
 main {
+    /*clear:both;*/
     /*max-width: 90%;*/
-    margin: 0 auto;
+    margin-top: 5vh;
+    /*background-color: white;*/
+    /*border: 3px solid red;*/
 }
 
-h1 a {
-    /*text-align: center;*/
+
+/*h1 a {
+    text-align: center;
     float:left;
-    /*margin-bottom:20px;*/
+    margin-bottom:20px;
     text-decoration: none;
     color:white;
 }
 
 h1 a:hover {
     text-decoration: underline;
-}
+}*/
 
-header {
-    max-width:400px;
-    float:left;
-    padding-left: 10px;
-    font-size: 1.3em;
-    /*border:1px solid white;*/
-    /*text-align: center;*/
-}
 
-.instructions {
+/*.instructions {
     float:left;
     padding-right: .5em;
-}
+}*/
 
-button, input {
-    padding: 5px;
-    background-color: white;
-    color: #196464;
-    border: 1px solid white;
+button{
+    /*padding: 5px;*/
+    background-color: #337ab7;
+    color: white;
+    border: 2px solid #337ab7;
     border-radius: 5px;
-    font-size: 1em;
+    /*font-size: 1em;*/
+    /*width:100%;*/
 }
 
 button:active {
-    background-color:black;
-    color:white;
+    background-color:white;
+    color:#337ab7;
 }
 
 #controls {
-    /*min-width: 40%;*/
+    padding-top:5vh;
+    text-align:center;
+
+}
+
+#controls .row {
+    padding: 1vh 0;
+    /*font-size:.75em;*/
+}
+
+/*#controls {
+    min-width: 40%;
     padding: 20px 10px;
     text-align: center;
     float:right;
-
-}
+}*/
 
 #main-buttons {
-    font-size:1.3em;
+    font-size:2em;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-#main-buttons input {
-    width: 50px;
+#startButton {
+    font-size: 1.5em;
+}
+
+#main-buttons .slider {
+    font-size:.5em;
 }
 
 #grid {
-    clear:both;
+    /*clear:both;*/
     background-color: white;
-    margin: 0 auto;
-    height: 70vh;
-    max-width: 900px;
-    /*padding: 5px;*/
+    margin: 0px auto;
+    height: 90vh;
+    max-width: 90%;
+    padding: 2px;
+    border: 5px solid #337ab7;
+
 }
 
-.row {
+.grid-row {
     /*border: 1px solid red;*/
     overflow: auto;
 }

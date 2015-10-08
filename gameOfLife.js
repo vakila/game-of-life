@@ -1,6 +1,8 @@
 // Set up with default values
-var nColumns = 20;
-var nRows = 20;
+var nColumns = 10;
+var nRows = 10;
+document.getElementById("num-cols").value = nColumns;
+document.getElementById("num-rows").value = nRows;
 resizeGrid(nColumns, nRows);
 
 // Clear and re-create the grid whenever the user clicks "Resize grid"
@@ -26,7 +28,7 @@ function resizeGrid(cols, rows) {
     // Insert row divs
     for (var r = 0; r < rows; r++) {
         var thisRow = document.createElement("div");
-        thisRow.className = "row";
+        thisRow.className = "grid-row";
         thisRow.style.height = String(cellHeight) + "%";
         grid.appendChild(thisRow);
 
@@ -243,7 +245,3 @@ function randomValues() {
         allCells[i].classList.toggle("alive", randomBool);
     }
 }
-
-
-
-

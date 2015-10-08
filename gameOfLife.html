@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>The Game of Life</title>
+    <meta name="description" content="Simple interactive browser-based visualization of the Game of Life">
+    <meta name="author" content="Anjana Sofia Vakil">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+                    title="Conway's Game of Life on Wikipedia">The Game of Life</a></h1>
+
+            <p>
+                <div class="instructions">Black cells are alive, white ones are dead. </div>
+                <div class="instructions">Click a cell to change its status.</div>
+            </p>
+        </header>
+
+        <div id="controls">
+            <form>
+                Columns: <input type="number" name="columns" min="2" max="50" value="20">
+                Rows: <input type="number" name="rows" min="2" max="50" value="20">
+                <button type="button" name="resize" onclick="resizeGrid(columns.value, rows.value)">Resize grid</button>
+            </form>
+            <p>
+                <button type="button" name="clear" onclick="clearGrid()">Clear all</button>
+                <button type="button" name="fill" onclick="fillGrid()">Fill all</button>
+                <button type="button" name="checker" onclick="checkerGrid()">Checkerboard</button>
+                <button type="button" name="random" onclick="randomValues()">Random</button>
+            </p>
+            <p id="main-buttons">
+                <button type="button" name="evolve" onclick="updateGrid()">Evolve once</button>
+                <button type="button" name="start" onclick="toggleEvolve(this)" value="stopped" id="startButton">
+                    Start evolving</button>
+                <small>
+                    fast <input type="range" name="speed" min="50" max="3000" value="500" id="speed"> slow
+                </small>
+            </p>
+        </div>
+
+        <div id="grid">
+            <!--div class="cell"></div-->
+        </div>
+
+
+    </main>
+
+
+    <script src="gameOfLife.js"></script>
+
+</body>
+
+</html>

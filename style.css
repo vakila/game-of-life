@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    background-color: #196464;
+    color: white;
+    font-size: 1em;
+}
+
+main {
+    /*max-width: 90%;*/
+    margin: 0 auto;
+}
+
+h1 a {
+    /*text-align: center;*/
+    float:left;
+    /*margin-bottom:20px;*/
+    text-decoration: none;
+    color:white;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+header {
+    max-width:400px;
+    float:left;
+    padding-left: 10px;
+    font-size: 1.3em;
+    /*border:1px solid white;*/
+    /*text-align: center;*/
+}
+
+.instructions {
+    float:left;
+    padding-right: .5em;
+}
+
+button, input {
+    padding: 5px;
+    background-color: white;
+    color: #196464;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:active {
+    background-color:black;
+    color:white;
+}
+
+#controls {
+    /*min-width: 40%;*/
+    padding: 20px 10px;
+    text-align: center;
+    float:right;
+
+}
+
+#main-buttons {
+    font-size:1.3em;
+}
+
+#main-buttons input {
+    width: 50px;
+}
+
+#grid {
+    clear:both;
+    background-color: white;
+    margin: 0 auto;
+    height: 70vh;
+    max-width: 900px;
+    /*padding: 5px;*/
+}
+
+.row {
+    /*border: 1px solid red;*/
+    overflow: auto;
+}
+
+.cell {
+    margin: 0px;
+    padding: 0px;
+    /*width: 50px;*/
+    /*height: 100%;*/
+    /*border: 1px solid black;*/
+    float:left;
+}
+
+.alive {
+    background-color: black;
+}

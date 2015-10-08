@@ -1,6 +1,6 @@
 // Set up with default values
-var nColumns = 10;
-var nRows = 10;
+var nColumns = 20;
+var nRows = 20;
 document.getElementById("num-cols").value = nColumns;
 document.getElementById("num-rows").value = nRows;
 resizeGrid(nColumns, nRows);

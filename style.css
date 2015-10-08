@@ -12,9 +12,9 @@ header {
     /*max-width:400px;*/
     /*float:left;*/
     margin-top: 5vh;
-    font-size: 1.3em;
+    /*font-size: 1.3em;*/
     /*border:3px solid yellow;*/
-    /*text-align: center;*/
+    text-align: center;
 }
 
 
@@ -26,6 +26,10 @@ main {
     /*border: 3px solid red;*/
 }
 
+h1 {
+    color: #337ab7;
+    font-size: 3em;
+}
 
 /*h1 a {
     text-align: center;

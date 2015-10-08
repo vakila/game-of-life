@@ -49,8 +49,8 @@ function resizeGrid(cols, rows) {
 
     }
 
-    // Randomly initiate grid
-    randomValues();
+    // Initial cell values
+    checkerGrid();
 }
 
 

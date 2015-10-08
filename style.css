@@ -28,7 +28,7 @@ main {
 
 h1 {
     color: #337ab7;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 /*h1 a {
@@ -54,7 +54,7 @@ button{
     background-color: #337ab7;
     color: white;
     border: 2px solid #337ab7;
-    border-radius: 5px;
+    border-radius: 7px;
     /*font-size: 1em;*/
     /*width:100%;*/
 }
@@ -83,7 +83,7 @@ button:active {
 }*/
 
 #main-buttons {
-    font-size:2em;
+    font-size:1.5em;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
@@ -93,7 +93,7 @@ button:active {
 }
 
 #main-buttons .slider {
-    font-size:.5em;
+    font-size:.75em;
 }
 
 #grid {
